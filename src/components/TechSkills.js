@@ -4,6 +4,7 @@ import reactImg from '../assets/images/techImg/icons8-react-native-144.png';
 import vueImg from '../assets/images/techImg/icons8-vue-js-144.png';
 import rubyImg from '../assets/images/techImg/icons8-ruby-programming-language-144.png';
 import cssImg from '../assets/images/techImg/icons8-css3-144.png';
+import htmlImg from '../assets/images/techImg/icons8-html-5-144.png';
 import rorImg from '../assets/images/techImg/rubyonrails.png';
 import nodeImg from '../assets/images/techImg/nodejs.png';
 import expressImg from '../assets/images/techImg/expressjs.png';
@@ -17,14 +18,14 @@ import graphqlImg from '../assets/images/techImg/icons8-graphql-144.png';
 
 const TechSkills = () => {
   let techImg = {
-    frontEndImg: [jscriptImg, reactImg, vueImg, cssImg],
-    backendImg: [rubyImg, rorImg, sqlImg],
+    frontEndImg: [jscriptImg, reactImg, vueImg, cssImg, htmlImg],
+    backendImg: [rubyImg, rorImg, sqlImg, postgresqlImg, graphqlImg],
     largeImg: [nodeImg, expressImg, jqueryImg, mongoDB]
   }
 
   return (
     <div className='container'>
-    <div className='row'>
+    <div className='row mb-1'>
     {techImg.frontEndImg.map((i) => {
       return (<div className="col"><img className="img-thumbnail border-0" style={{height: 72 + "px", width: 72 + 'px' }} src={i} id="img"/></div>)
     })
@@ -36,7 +37,7 @@ const TechSkills = () => {
     })
   }
   </div>
-    <div className='row'>
+    <div className='row p-2'>
     {techImg.largeImg.map((i) => {
       return (<div className="col"><img className="img-thumbnail border-0" src={i} id="img"/></div>)
     })
