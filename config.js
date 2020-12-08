@@ -1,5 +1,4 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Grayscale', // <title>
   manifestName: 'Grayscale',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
@@ -8,8 +7,9 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/gatsby-starter-grayscale/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav Srivastava',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
+  siteTitle: "Brittany's Portfolio",
+  heading: 'Brittany Crocker',
+  subHeading: "I'm a Software Engineer based in Sydney AU. ",
 
   // social
   socialLinks: [
@@ -34,7 +34,5 @@ module.exports = {
       url: 'https://facebook.com/theanubhav',
     },
   ],
-  email: 'anubhav.srivastava00@gmail.com',
-  phone: '000-00000',
-  address: '305 Del Sol, Sunnyvale, CA',
+  email: 'brittany.crocker@outlook.com',
 };

@@ -6,10 +6,10 @@ import Scroll from '../components/Scroll';
 import config from '../../config';
 import Footer from '../components/Footer';
 import SocialLinks from '../components/SocialLinks';
+import TechSkills from '../components/TechSkills';
 import Subscribe from '../components/Subscribe';
 import Header from '../components/Header';
 
-import ipad from '../assets/images/ipad.png';
 import demoImage1 from '../assets/images/demo-image-01.jpg';
 import demoImage2 from '../assets/images/demo-image-02.jpg';
 import bgMaster from '../assets/images/bg-masthead.jpg';
@@ -18,9 +18,12 @@ const IndexPage = () => (
   <Layout>
     <Header />
 
-    <header className="masthead">
+    <header className="masthead" alt="snowcovered mountains with white reflection">
       <div className="container d-flex h-100 align-items-center">
         <div className="mx-auto text-center">
+          <h2 className="d-flex flex-row text-white-50 mx-auto mb-5">
+            Hi, I'm
+          </h2>
           <h1 className="mx-auto my-0 text-uppercase">{config.heading}</h1>
           <h2 className="text-white-50 mx-auto mt-2 mb-5">
             {config.subHeading}
@@ -38,8 +41,8 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">
-            <h2 className="text-white mb-4">Built with Bootstrap 4</h2>
-            <p className="text-white-50">
+            <h2 className="text-black mb-4">About Me</h2>
+            <p className="text-black-50">
               Grayscale is a free Bootstrap theme created by Start Bootstrap. It
               can be yours right now, simply download the starter on
               <a href="https://github.com/anubhavsrivastava/gatsby-starter-grayscale">
@@ -49,7 +52,7 @@ const IndexPage = () => (
             </p>
           </div>
         </div>
-        <img src={ipad} className="img-fluid" alt="" />
+        <img src="" className="img-fluid" alt="" />
       </div>
     </section>
 
@@ -61,11 +64,9 @@ const IndexPage = () => (
           </div>
           <div className="col-xl-4 col-lg-5">
             <div className="featured-text text-center text-lg-left">
-              <h4>Shoreline</h4>
+              <h4>Happy Tails</h4>
               <p className="text-black-50 mb-0">
-                Grayscale is open source and MIT licensed. This means you can
-                use it for any project - even commercial projects! Download it,
-                customize it, and publish your website!
+              Find dog parks near you by entering a location into the provided auto complete search bar to filter a list of 20 dog-friendly parks near the entered location. Locations appear as clickable markers on the map. Click on the markers to display details about the park, park name, address and rating. Click Zoom out to reset zoom to your original search results.
               </p>
             </div>
           </div>
@@ -114,9 +115,19 @@ const IndexPage = () => (
       </div>
     </section>
 
+    <section id="technical" className="about-section text-center">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-8 mx-auto">
+            <h2 className="text-black mb-4">Technical Skills</h2>
+              <div id="technical"></div>
+                  <TechSkills />
+              </div>
+          </div>
+        </div>
+    </section>
     <Subscribe />
-
-    <SocialLinks />
+      <SocialLinks/>
     <Footer />
   </Layout>
 );

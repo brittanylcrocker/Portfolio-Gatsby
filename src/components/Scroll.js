@@ -23,6 +23,7 @@ class Scroll extends React.Component {
     smoothscroll.polyfill();
   }
   handleClick(e) {
+    console.log(this.props)
     e.preventDefault();
     const { onClick = () => {} } = this.props;
     let elem = 0;
