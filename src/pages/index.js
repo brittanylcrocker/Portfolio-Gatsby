@@ -6,8 +6,8 @@ import Scroll from '../components/Scroll';
 import config from '../../config';
 import Footer from '../components/Footer';
 import SocialLinks from '../components/SocialLinks';
+import EmailButton from '../components/EmailButton';
 import TechSkills from '../components/TechSkills';
-import Subscribe from '../components/Subscribe';
 import Header from '../components/Header';
 
 import demoImage1 from '../assets/images/demo-image-01.jpg';
@@ -115,7 +115,7 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="technical" className="about-section text-center">
+    <section id="technical" className="technical-section text-center">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">
@@ -126,8 +126,10 @@ const IndexPage = () => (
           </div>
         </div>
     </section>
-    <Subscribe />
+    <div className="signup-section">
+      <EmailButton/>
       <SocialLinks/>
+    </div>
     <Footer />
   </Layout>
 );

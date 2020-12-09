@@ -1,9 +1,11 @@
 import React from 'react';
 import config from '../../config';
+import EmailButton from './EmailButton'
+
 
 export default function SocialLinks() {
   return (
-    <section className="contact-section bg-black">
+    <section className="contact-section">
         <div className="social d-flex justify-content-center">
           {config.socialLinks.map(social => {
             const { icon, url } = social;
@@ -13,6 +15,7 @@ export default function SocialLinks() {
               </a>
             );
           })}
+
       </div>
     </section>
   );
