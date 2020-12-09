@@ -127,7 +127,6 @@ const IndexPage = () => (
         </div>
     </section>
     <div className="signup-section">
-      <EmailButton/>
       <SocialLinks/>
     </div>
     <Footer />

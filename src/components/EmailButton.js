@@ -9,7 +9,7 @@ class EmailButton extends Component {
         window.location.href = `mailto:brittanylcrocker@gmail.com`;
     }
     render(){
-        return <button onClick={this.onClick}>EmailButton</button>;
+        return <a onClick={this.onClick} className="mx-2"><i className="fas fa-envelope"></i></a>;
     }
 }
 

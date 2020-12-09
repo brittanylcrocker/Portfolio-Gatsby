@@ -7,6 +7,7 @@ export default function SocialLinks() {
   return (
     <section className="contact-section">
         <div className="social d-flex justify-content-center">
+          <EmailButton />
           {config.socialLinks.map(social => {
             const { icon, url } = social;
             return (
