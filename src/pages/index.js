@@ -6,13 +6,15 @@ import Scroll from '../components/Scroll';
 import config from '../../config';
 import Footer from '../components/Footer';
 import SocialLinks from '../components/SocialLinks';
-import EmailButton from '../components/EmailButton';
 import TechSkills from '../components/TechSkills';
 import Header from '../components/Header';
 
 import demoImage1 from '../assets/images/demo-image-01.jpg';
 import demoImage2 from '../assets/images/demo-image-02.jpg';
 import bgMaster from '../assets/images/bg-masthead.jpg';
+
+import LogoNodejs from 'react-ionicons/lib/LogoNodejs'
+
 
 const IndexPage = () => (
   <Layout>
@@ -43,12 +45,15 @@ const IndexPage = () => (
           <div className="col-lg-8 mx-auto">
             <h2 className="text-black mb-4">About Me</h2>
             <p className="text-black-50">
-              Grayscale is a free Bootstrap theme created by Start Bootstrap. It
-              can be yours right now, simply download the starter on
-              <a href="https://github.com/anubhavsrivastava/gatsby-starter-grayscale">
-                the github repo
-              </a>
-              .
+              Seeking a role as a software engineer at a company where I can grow and master the art of software engineering alongside a team of awesome, supportive individuals.
+              <p>
+                <h5>In my free time:</h5>
+              <i className="fas fa-table-tennis fa-2x p-1"></i>
+              <i className="fas fa-hiking fa-2x p-1 ml-2"></i>
+              <i className="fas fa-mountain fa-2x p-1"></i>
+              <i className="fas fa-birthday-cake m1-2 fa-2x p-1"></i>
+
+              </p>
             </p>
           </div>
         </div>
@@ -64,7 +69,7 @@ const IndexPage = () => (
           </div>
           <div className="col-xl-4 col-lg-5">
             <div className="featured-text text-center text-lg-left">
-              <h4>Happy Tails</h4>
+              <a href="http://happy-tails.surge.sh/#/" target="_blank"><h4>Happy Tails</h4></a>
               <p className="text-black-50 mb-0">
               Find dog parks near you by entering a location into the provided auto complete search bar to filter a list of 20 dog-friendly parks near the entered location. Locations appear as clickable markers on the map. Click on the markers to display details about the park, park name, address and rating. Click Zoom out to reset zoom to your original search results.
               </p>
