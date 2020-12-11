@@ -5,9 +5,8 @@ module.exports = {
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-grayscale/`, // This path is subpath of your hosting https://domain/portfolio
-  siteTitle: "Brittany's Portfolio",
+  manifestIcon: 'src/assets/img/.png',
+  siteTitle: "Brittany Crocker",
   heading: 'Brittany Crocker',
   subHeading: "I'm a Software Engineer based in Sydney AU. ",
 
@@ -16,12 +15,12 @@ module.exports = {
     {
       icon: 'fa-linkedin-in',
       name: 'Linkedin',
-      url: 'https://linkedin.com/in/theanubhav/',
+      url: 'https://www.linkedin.com/in/brittanycrocker/',
     },
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      url: 'https://github.com/brittanylcrocker',
     }
   ],
   email: 'brittany.crocker@outlook.com',
